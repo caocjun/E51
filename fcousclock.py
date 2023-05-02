@@ -1,14 +1,13 @@
 import time
 
-minutee = int(input("enter the number of minutes to focus:"))
+minutes = int(input("enter the number of minutes to focus:"))
 seconds = minutes * 60
 
 while seconds:
-    mins, secs = divmod(mins,secs)
-    timer = '{:02d}:{:02d}'.format(mins, secs)
-    print(time,end="\r")
-    time.sleep(1)
-    seconds -= 1
-    
-    print("Time's up!")
+    minutes, secs = divmod(minutes, seconds)
+    timer = '{:02d}:{:02d}'.format(minutes, seconds)
+    print(time, end="\r")
+    time.sleep(5)
+
+    print("time，up！")
     
